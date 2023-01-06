@@ -1,0 +1,11 @@
+<div class="container mt-4">
+  <% if @restaurant.save %>
+    <div class="alert alert-success">
+      Restaurant was successfully created.
+    </div>
+  <% else %>
+    <div class="alert alert-danger">
+      <%= render "new" %>
+    </div>
+  <% end %>
+</div>
